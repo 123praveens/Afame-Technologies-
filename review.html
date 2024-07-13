@@ -1,0 +1,17 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" ng-app="dataBindingApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Data Binding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body>
+    <div ng-controller="DataBindingController">
+        <h1>Moview Review</h1>
+        <input type="text" ng-model="message" ng-change="updateMessage()">
+        <p>{{ updatedMessage }}</p>
+    </div>
+</body>
+</html>
